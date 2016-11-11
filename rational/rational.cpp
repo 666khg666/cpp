@@ -7,7 +7,6 @@ class rational
 
 		int numerator() const { return num; }
 		int denominator() const { return denom;}
-		//friend std::ostream& operator<<(std::ostream& os, const 
 	private:
 		int num;
 		int denom;	
