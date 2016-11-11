@@ -28,7 +28,7 @@ struct year
 class date
 {
 	public:
-		explicit date(struct day d, struct month m, struct year y) : day(d.val), month(m.val), year(y.val) {}
+		explicit date(const struct day& d, const struct month& m, const struct year& y) : day(d.val), month(m.val), year(y.val) {}
 
 		friend std::ostream& operator<<(std::ostream& os, const date& d);
 	private:
